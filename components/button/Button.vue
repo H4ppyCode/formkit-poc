@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { ButtonEmits, ButtonProps } from '@/components/primitives/button/button-variant'
-import { buttonVariant } from '@/components/primitives/button/button-variant'
+import type { ButtonEmits, ButtonProps } from '@/components/button/button-variant'
+import { buttonVariant } from '@/components/button/button-variant'
 import { cn } from '@/utils'
 
 const {
