@@ -1,11 +1,13 @@
-// formkit.config.ts
-import { defaultConfig } from '@formkit/vue'
-import { rootClasses } from './formkit.theme'
-import '@formkit/themes/genesis'
+import { DefaultConfigOptions } from '@formkit/vue';
 
-export default defaultConfig({
-    config: {
-        rootClasses,
-    },
+const config: DefaultConfigOptions = {
+    theme: 'genesis',
+    inputs: {
+        hello: {
+            type: 'input',
+            schema: ['Hello world']
+        }
+    }
+};
 
-})
+export default config;
